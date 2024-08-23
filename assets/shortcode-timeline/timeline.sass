@@ -26,7 +26,7 @@
       position: absolute
       width: var(--timeline_bullet_diameter)
       height: var(--timeline_bullet_diameter)
-      left: calc(-0.5 * var(--timeline_column_width) - 0.5 * var(--timeline_bullet_diameter) - var(--timeline_bullet_border_width))
+      left: calc(-0.5 * var(--timeline_column_width) - 0.5 * var(--timeline_bullet_diameter) )
       background-color: var(--timeline_bullet_color)
       border: var(--timeline_bullet_border_width) solid var(--timeline_line_color)
       top: 0px
@@ -47,7 +47,6 @@
 
   .content
     border: 2px solid var(--content_border_color)
-    background-color: var(--content_background_color)
     position: relative
     border-radius: 6px
     transition: box-shadow 0.3s
@@ -58,15 +57,13 @@
 
 
     .title
-      padding: 5px 30px
+      padding: 5px 20px
       font-weight: bold
       display: inline-block
 
 
     .duration
       margin: 0
-      color: var(--content_duration_color)
-      opacity: 0.6
       position: absolute
       top: 50%
       transform: translateX(-50%) rotate(-90deg)
@@ -82,7 +79,7 @@
 
     .body
       margin: 0px
-      padding: 5px 30px
+      padding: 5px 20px
       transition-property: max-height, padding
       transition-duration: var(--content_collapse_duration)
       transition-timing-function: ease-in-out
